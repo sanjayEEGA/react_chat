@@ -1,0 +1,326 @@
+
+
+.App {
+  /* text-align: center; */
+  /* max-width: 728px; */
+  margin: 0 auto;
+}
+
+.App header {
+  background-color: #f90a23;
+  height: 10vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  /* max-width: 728px; */
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-color: rgb(40, 37, 53); */
+  background-image: url(img/bg-img.png);
+  background-position: center;
+  background-size: cover;
+  
+}
+
+main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(24, 23, 23);
+  width: 100%;
+  /* max-width: 728px; */
+  display: flex;
+  font-size: 1.5rem;
+}
+
+form button {
+  width: 20%;
+  background-color: rgb(56, 56, 143);
+}
+
+
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: white;
+  
+  outline: none;
+  border: none;
+  padding: 0 10px;
+}
+
+button {
+  background-color: #282c34; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 2.25rem;
+}
+
+button:disabled {
+  
+  cursor: not-allowed;
+}
+
+
+.sign-in {
+  
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+
+
+ul, li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  display: block;
+  text-align: center !important;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: #181717 !important;
+  /* background: #0b93f6; */
+  background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+  align-self: flex-end;
+
+  max-width: fit-content;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  display: block;
+  text-align: center !important;
+}
+.received p {
+  background: #e5e5ea;
+  color: black;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+  position: relative;
+}
+
+/* ================================= */
+
+/* ------text box css-------- */
+.animate-charcter
+{
+   
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #e10951e8 67%,
+    #b6b10bbb 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+h3{
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  display: block;
+  text-align: center !important;
+}
+
+/* ======================= */
+
+
+/* ------header h1 tag css-------- */
+.header-h1-tag
+{
+   
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #15a154 29%,
+    #e10971e8 67%,
+    #0d3487bb 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: headerhclip 4s alternate-reverse infinite;
+  display: inline-block;
+      
+}
+
+@keyframes headerhclip {
+  to {
+    background-position: 300% center;
+  }
+}
+
+/* ============================================================================================== */
+
+
+.sign-out {
+  
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+  
+ 
+}
+/* ========================================================1 */
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+
+
+
+.navigation .logout {
+  font-size:1em;
+  font-family: 'Oswald', sans-serif;
+	position: relative;
+  right: -18px;
+  bottom: -4px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  opacity: 0;
+  transition: opacity .45s;
+  -webkit-transition: opacity .35s;
+  
+}
+
+.navigation .button {
+	text-decoration: none;
+	float: right;
+  padding: 12px;
+  /* margin: 15px; */
+  color: white;
+  width: 30px;
+  /* background-color: black; */
+  transition: width .35s;
+  -webkit-transition: width .35s;
+  overflow: hidden;
+/* background-image: url(img/backgorund-chat.jpg); */
+
+  
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.25rem;
+  
+}
+
+.navigation > a:hover {
+  width: 120px;
+}
+
+.navigation > a:hover .logout{
+  opacity: .9;
+  color: #181717;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.navigation img {
+  width: 25px;
+  border-radius: 50px;
+  float: left;
+}
